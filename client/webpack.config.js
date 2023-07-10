@@ -19,7 +19,7 @@ module.exports = () => {
     },
     plugins: [
               new HtmlWebpackPlugin({
-                template: './src/index.html',
+                template: "./index.html",
                 title: 'Just Another Text Editor',
               }),
 
@@ -40,7 +40,7 @@ module.exports = () => {
                 publicPath: './',
                 icons: [
                   {
-                    src: path.resolve('src/assets/icon.png'),
+                    src: path.resolve("src/images/logo.png"),
                     sizes: [96, 128, 192, 256, 384, 512],
                     destination: path.join('assets', 'icons'),
                   },
@@ -60,7 +60,7 @@ module.exports = () => {
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
-            option: {
+            options: {
               presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread',
                         '@babel/transform-runtime'],
