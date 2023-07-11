@@ -15,7 +15,7 @@ module.exports = () => {
     },
     output: {
       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, '../dist'),
+      path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
               new HtmlWebpackPlugin({
@@ -36,8 +36,8 @@ module.exports = () => {
                 description: 'A simple text editor which can make notes with or without a connection to the Internet.',
                 background_color: '#272822',
                 theme_color: '#272822',
-                start_url: './',
-                publicPath: './',
+                start_url: '/',
+                publicPath: '/',
                 icons: [
                   {
                     src: path.resolve("src/images/logo.png"),
